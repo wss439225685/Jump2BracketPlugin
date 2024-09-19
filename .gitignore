@@ -1,4 +1,3 @@
-*.iml
 *.pydevproject
 .project
 .metadata
@@ -17,8 +16,7 @@ tmp/**/*
 rebel.xml
 .DS_Store
 
-# idea project folder
-.idea/
+
 
 # External tool builders
 .externalToolBuilders/
