@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>com.lich.jump.2.bracket</id>
+  <name>Jump2Bracket</name>
+  <version>1.0</version>
+  <vendor email="439225685@qq.com" url="https://github.com/wss439225685/Jump2BracketPlugin">lich</vendor>
+
+  <description><![CDATA[
+      快速将光标移动到左括号后面,ctrl+9<br>
+      快速将光标移动到右括号前面,ctrl+0
+    ]]></description>
+
+   <change-notes><![CDATA[
+     For the Lich King!
+   ]]>
+   </change-notes>
+
+  <idea-version since-build="173.0"/>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <action id="com.lich.jump.bracket.Jump2RightBracketAction"
+            class="com.lich.jump.bracket.Jump2RightBracketAction">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl 9"/>
+    </action>
+    <action id="com.lich.jump.bracket.Jump2LeftBracketAction"
+            class="com.lich.jump.bracket.Jump2LeftBracketAction">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl 0"/>
+    </action>
+  </actions>
+</idea-plugin>
